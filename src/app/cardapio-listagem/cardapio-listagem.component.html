@@ -1,0 +1,34 @@
+<div class="card">
+    <h2>Listagem do menu</h2>
+    <div>
+      <button pButton label="Novo" (click)="onNovo($event)"></button>&nbsp;
+    </div>
+    <p-table [value]="cardapios" selectionMode="single" [(selection)]="cardapioSelecionado"
+      dataKey="id" (onRowSelect)="onRowSelect($event)">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="id">Código <p-sortIcon field="id"></p-sortIcon>
+          </th>
+          <th pSortableColumn="nome">Nome <p-sortIcon field="nome"></p-sortIcon>
+          </th>
+          <th pSortableColumn="preco">Preço <p-sortIcon field="preco"></p-sortIcon>
+          </th>
+          <th pSortableColumn="desconto">Desconto <p-sortIcon field="desconto"></p-sortIcon>
+          </th>
+          <th pSortableColumn="ingredientes">Ingredientes <p-sortIcon field="ingredientes"></p-sortIcon>
+          </th>
+
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-cardapio>
+        <tr [pSelectableRow]="cardapio">
+          <td>{{cardapio.id}}</td>
+          <td>{{cardapio.nome}}</td>
+          <td>{{cardapio.preco}}</td>
+          <td>{{cardapio.desconto}}</td>
+          <td>{{cardapio.ingredientes}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  
