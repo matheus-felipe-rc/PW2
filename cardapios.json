@@ -7,16 +7,33 @@
       "desconto": "não",
       "descricao": "sim",
       "ingredientes": "sim"
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "Açaí",
+      "preco": 22.4,
+      "desconto": "10",
+      "descricao": "Fruta",
+      "ingredientes": "Açaí In Natura",
+      "id": 2
+    },
+    {
+      "nome": "Refrigerante",
+      "preco": 11.23,
+      "desconto": "33,44",
+      "descricao": "Refrigerante",
+      "ingredientes": "Glicose",
+      "id": 3
+    },
+    {
+      "nome": "Açaí",
+      "preco": "22,33",
+      "desconto": "10",
+      "descricao": "Fruta",
+      "ingredientes": "Açaí In Natura",
+      "id": 4
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "author": {
+    "name": "Márcio Araújo e Matheus Felipe"
   }
 }
